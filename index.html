@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murat Ege Ertürk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="cursor-glow" id="glow"></div>
+
+<nav>
+  <div class="nav-logo">M<span>.</span>E<span>.</span>E</div>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#about" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+      <a href="#skills" data-tr="Beceriler" data-en="Skills">Beceriler</a>
+      <a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a>
+      <a href="#cv" data-tr="CV" data-en="CV">CV</a>
+      <a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+    </div>
+    <div class="nav-controls">
+      <button class="ctrl-btn active" id="btn-tr" onclick="setLang('tr')">TR</button>
+      <button class="ctrl-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="ctrl-btn" id="theme-btn" onclick="toggleTheme()">Açık</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-lines"></div>
+  <div class="wrap hero-wrap">
+    <div class="hero-text">
+      <div class="hero-eyebrow" data-tr="Yazılım Geliştirici" data-en="Software Developer">Yazılım Geliştirici</div>
+      <h1 class="hero-name">Murat<br><span>Ege</span><br>Ertürk</h1>
+      <p class="hero-desc"
+         data-tr="İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı öğrencisi. Python, Java ve web teknolojileri üzerine çalışıyorum."
+         data-en="Computer Programming student at İzmir Economy University. Working on Python, Java and web technologies.">
+        İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı öğrencisi. Python, Java ve web teknolojileri üzerine çalışıyorum.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary magnetic" data-tr="Projelerim" data-en="My Projects">Projelerim</a>
+        <a href="#contact" class="btn btn-ghost magnetic" data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</a>
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <img src="resim.png" alt="Murat Ege Ertürk" />
+        </div>
+        <div class="photo-tag">İzmir, TR</div>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label" data-tr="Proje" data-en="Projects">Proje</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num">6+</span>
+        <span class="stat-label" data-tr="Dil/Araç" data-en="Lang/Tool">Dil/Araç</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span data-tr="Aşağı kaydır" data-en="Scroll down">Aşağı kaydır</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-tag" data-tr="01 — Hakkımda" data-en="01 — About">01 — Hakkımda</div>
+    <div class="about-grid">
+      <h2 class="big-title" data-tr="Beni<br>Tanıyalım" data-en="Get to<br>Know Me">Beni<br>Tanıyalım</h2>
+      <div class="about-right">
+        <p data-tr="İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı bölümünde öğrenimime devam ediyorum. Yazılım geliştirme, veritabanları ve web teknolojilerine ilgi duyuyorum."
+           data-en="I am studying Computer Programming at İzmir Economy University. I am interested in software development, databases and web technologies.">
+          İzmir Ekonomi Üniversitesi Bilgisayar Programcılığı bölümünde öğrenimime devam ediyorum. Yazılım geliştirme, veritabanları ve web teknolojilerine ilgi duyuyorum.
+        </p>
+        <p data-tr="Python, Java ve JavaScript ile projeler geliştiriyor, SQL ile veritabanı tasarımı yapıyorum. Yeni teknolojileri keşfetmek ve problem çözmek benim için bir tutku."
+           data-en="I develop projects with Python, Java and JavaScript, and design databases with SQL. Exploring new technologies and solving problems is my passion.">
+          Python, Java ve JavaScript ile projeler geliştiriyor, SQL ile veritabanı tasarımı yapıyorum. Yeni teknolojileri keşfetmek ve problem çözmek benim için bir tutku.
+        </p>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="ac-label" data-tr="Üniversite" data-en="University">Üniversite</div>
+            <div class="ac-val">İzmir Ekonomi Üniversitesi</div>
+          </div>
+          <div class="about-card">
+            <div class="ac-label" data-tr="Bölüm" data-en="Department">Bölüm</div>
+            <div class="ac-val" data-tr="Bilgisayar Programcılığı" data-en="Computer Programming">Bilgisayar Programcılığı</div>
+          </div>
+          <div class="about-card">
+            <div class="ac-label" data-tr="Dönem" data-en="Period">Dönem</div>
+            <div class="ac-val">2024 – 2026</div>
+          </div>
+          <div class="about-card">
+            <div class="ac-label" data-tr="Konum" data-en="Location">Konum</div>
+            <div class="ac-val" data-tr="İzmir, Türkiye" data-en="İzmir, Turkey">İzmir, Türkiye</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-tag" data-tr="02 — Beceriler" data-en="02 — Skills">02 — Beceriler</div>
+    <h2 class="big-title" data-tr="Teknik<br>Beceriler" data-en="Technical<br>Skills">Teknik<br>Beceriler</h2>
+    <div class="skills-marquee-wrap">
+      <div class="skills-marquee">
+        <span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span>
+        <span>PHP</span><span>C#</span><span>HTML</span><span>CSS</span><span>SQL</span>
+        <span>Git</span><span>GitHub</span><span>VS Code</span><span>Jira</span><span>Miro</span>
+        <span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span>
+        <span>PHP</span><span>C#</span><span>HTML</span><span>CSS</span><span>SQL</span>
+        <span>Git</span><span>GitHub</span><span>VS Code</span><span>Jira</span><span>Miro</span>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card"><div class="sk-cat" data-tr="Diller" data-en="Languages">Diller</div><div class="sk-items">Python · Java · JavaScript · TypeScript · PHP · C#</div></div>
+      <div class="skill-card"><div class="sk-cat">Web</div><div class="sk-items">HTML · CSS · JavaScript · TypeScript · PHP</div></div>
+      <div class="skill-card"><div class="sk-cat" data-tr="Veritabanı" data-en="Database">Veritabanı</div><div class="sk-items">SQL</div></div>
+      <div class="skill-card"><div class="sk-cat" data-tr="Araçlar" data-en="Tools">Araçlar</div><div class="sk-items">Git · GitHub · VS Code · Jira · Miro</div></div>
+      <div class="skill-card"><div class="sk-cat" data-tr="Kişisel" data-en="Soft Skills">Kişisel</div><div class="sk-items" data-tr="Takım Çalışması · Problem Çözme · Hızlı Adaptasyon · İletişim" data-en="Teamwork · Problem Solving · Fast Adaptation · Communication">Takım Çalışması · Problem Çözme · Hızlı Adaptasyon · İletişim</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-tag" data-tr="03 — Projeler" data-en="03 — Projects">03 — Projeler</div>
+    <h2 class="big-title" data-tr="Yaptıklarım" data-en="My Work">Yaptıklarım</h2>
+    <div class="projects-list">
+
+      <div class="proj-item">
+        <div class="proj-num">01</div>
+        <div class="proj-body">
+          <div class="proj-title" data-tr="EgeCan Airlines" data-en="EgeCan Airlines">EgeCan Airlines</div>
+          <div class="proj-desc" data-tr="Python ve SQLite ile geliştirilmiş masaüstü havayolu yönetim sistemi. OpenAI API entegrasyonu ve CustomTkinter ile modern arayüz." data-en="Desktop airline management system built with Python and SQLite. Modern UI with CustomTkinter and OpenAI API integration.">Python ve SQLite ile geliştirilmiş masaüstü havayolu yönetim sistemi. OpenAI API entegrasyonu ve CustomTkinter ile modern arayüz.</div>
+          <div class="proj-tags"><span>Python</span><span>SQLite</span><span>OpenAI API</span></div>
+        </div>
+        <a href="https://github.com/murategeerturk/pytontabanl-otomasyon" target="_blank" class="proj-link magnetic" data-tr="GitHub'da Gör" data-en="View on GitHub">GitHub'da Gör</a>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-num">02</div>
+        <div class="proj-body">
+          <div class="proj-title" data-tr="Kalori & Beslenme Takip" data-en="Calorie & Nutrition Tracker">Kalori & Beslenme Takip</div>
+          <div class="proj-desc" data-tr="PHP ve MySQL ile geliştirilmiş web tabanlı beslenme takip uygulaması. Kullanıcı girişi, kalori hesaplama ve yemek planı." data-en="Web-based nutrition tracking app built with PHP and MySQL. User authentication, calorie calculation and meal planning.">PHP ve MySQL ile geliştirilmiş web tabanlı beslenme takip uygulaması. Kullanıcı girişi, kalori hesaplama ve yemek planı.</div>
+          <div class="proj-tags"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+        </div>
+        <a href="https://github.com/murategeerturk/KaloriHesaplama" target="_blank" class="proj-link magnetic" data-tr="GitHub'da Gör" data-en="View on GitHub">GitHub'da Gör</a>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-num">03</div>
+        <div class="proj-body">
+          <div class="proj-title" data-tr="Uzay Galerisi" data-en="Space Gallery">Uzay Galerisi</div>
+          <div class="proj-desc" data-tr="Saf HTML ve CSS ile geliştirilmiş uzay temalı kişisel web sitesi. Animasyonlu hero bölümü, galeri ve hakkımda sayfası." data-en="Space-themed personal website built with pure HTML and CSS. Animated hero section, gallery and about page.">Saf HTML ve CSS ile geliştirilmiş uzay temalı kişisel web sitesi. Animasyonlu hero bölümü, galeri ve hakkımda sayfası.</div>
+          <div class="proj-tags"><span>HTML</span><span>CSS</span></div>
+        </div>
+        <a href="https://github.com/murategeerturk/webtabanl-programlama" target="_blank" class="proj-link magnetic" data-tr="GitHub'da Gör" data-en="View on GitHub">GitHub'da Gör</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+<section id="cv">
+  <div class="wrap">
+    <div class="section-tag" data-tr="04 — CV" data-en="04 — CV">04 — CV</div>
+    <h2 class="big-title" data-tr="CV İndir" data-en="Download CV">CV İndir</h2>
+    <div class="cv-row">
+      <a href="cv-turkce.pdf" download class="cv-card magnetic">
+        <div class="cv-lang">TR</div>
+        <div class="cv-name">Özgeçmiş</div>
+        <div class="cv-dl" data-tr="PDF İndir" data-en="Download PDF">PDF İndir</div>
+      </a>
+      <a href="cv-english.pdf" download class="cv-card cv-card-outline magnetic">
+        <div class="cv-lang">EN</div>
+        <div class="cv-name">Resume</div>
+        <div class="cv-dl" data-tr="PDF İndir" data-en="Download PDF">PDF İndir</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-tag" data-tr="05 — İletişim" data-en="05 — Contact">05 — İletişim</div>
+    <div class="contact-grid">
+      <h2 class="big-title" data-tr="Konuşalım" data-en="Let's Talk">Konuşalım</h2>
+      <div class="contact-links">
+        <a href="mailto:murategeerturk2007@gmail.com" class="clink">
+          <span class="clink-label" data-tr="E-posta" data-en="Email">E-posta</span>
+          <span class="clink-val">murategeerturk2007@gmail.com</span>
+        </a>
+        <a href="https://github.com/murategeerturk" target="_blank" class="clink">
+          <span class="clink-label">GitHub</span>
+          <span class="clink-val">github.com/murategeerturk</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ege-ertürk-19a58740a/" target="_blank" class="clink">
+          <span class="clink-label">LinkedIn</span>
+          <span class="clink-val">linkedin.com/in/ege-erturk</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Murat Ege Ertürk</span>
+  <span class="footer-url">murategerturk.com</span>
+  <span>© 2026</span>
+</footer>
+
+<script>
+  // Lang
+  function setLang(l) {
+    document.querySelectorAll('[data-tr]').forEach(el => {
+      const val = el.getAttribute('data-' + l);
+      if (val) el.innerHTML = val;
+    });
+    document.documentElement.lang = l;
+    document.getElementById('btn-tr').classList.toggle('active', l === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  }
+
+  // Theme
+  let light = false;
+  function toggleTheme() {
+    light = !light;
+    document.documentElement.setAttribute('data-theme', light ? 'light' : 'dark');
+    document.getElementById('theme-btn').textContent = light ? 'Koyu' : 'Açık';
+  }
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+  // Cursor glow (CSS only on mobile, JS on desktop)
+  const glow = document.getElementById('glow');
+  document.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+
+  // Magnetic buttons
+  document.querySelectorAll('.magnetic').forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      el.style.transform = `translate(${x * 0.18}px, ${y * 0.18}px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+    });
+  });
+
+  // Fade in hero
+  setTimeout(() => {
+    document.querySelectorAll('#hero .fi').forEach((el, i) => {
+      setTimeout(() => el.classList.add('in'), i * 120);
+    });
+  }, 80);
+</script>
+</body>
+</html>
